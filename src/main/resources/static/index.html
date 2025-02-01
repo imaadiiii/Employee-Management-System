@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<nav>
+    <button id="showLoginBtn">Login</button>
+    <button id="showRegisterBtn">Register</button>
+    <button id="showEmployeesBtn">Employees</button>
+</nav>
+
+<!-- LOGIN FORM -->
+<div id="loginForm">
+    <h2>Login</h2>
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" placeholder="Enter username" />
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" placeholder="Enter password" />
+
+    <button id="loginBtn">Login</button>
+</div>
+
+<!-- REGISTER FORM -->
+<div id="registerForm" style="display: none;">
+    <h2>Register</h2>
+    <label for="registerUsername">Username:</label>
+    <input type="text" id="registerUsername" placeholder="Enter username" />
+
+    <label for="registerPassword">Password:</label>
+    <input type="password" id="registerPassword" placeholder="Enter password" />
+
+    <label for="registerRole">Role (optional):</label>
+    <input type="text" id="registerRole" placeholder="e.g. ADMIN or USER" />
+
+    <button id="registerBtn">Register</button>
+</div>
+
+<!-- EMPLOYEES SECTION -->
+<div id="employeesSection" style="display: none;">
+    <h2>Employee Management</h2>
+
+    <!-- CREATE NEW EMPLOYEE -->
+    <div class="create-employee">
+        <h3>Create Employee</h3>
+        <label for="empFirstName">First Name:</label>
+        <input type="text" id="empFirstName" placeholder="John" />
+
+        <label for="empLastName">Last Name:</label>
+        <input type="text" id="empLastName" placeholder="Doe" />
+
+        <label for="empEmail">Email:</label>
+        <input type="email" id="empEmail" placeholder="john@example.com" />
+
+        <button id="createEmployeeBtn">Create Employee</button>
+    </div>
+
+    <hr />
+
+    <!-- DISPLAY EMPLOYEES -->
+    <div class="display-employees">
+        <h3>All Employees</h3>
+        <button id="refreshEmployeesBtn">Refresh List</button>
+        <ul id="employeesList"></ul>
+    </div>
+
+    <!-- UPDATE EMPLOYEE (Simple example) -->
+    <div class="update-employee">
+        <h3>Update Employee</h3>
+        <label for="updateEmpId">Employee ID:</label>
+        <input type="text" id="updateEmpId" placeholder="Existing ID" />
+
+        <label for="updateEmpFirstName">First Name:</label>
+        <input type="text" id="updateEmpFirstName" placeholder="New First Name" />
+
+        <label for="updateEmpLastName">Last Name:</label>
+        <input type="text" id="updateEmpLastName" placeholder="New Last Name" />
+
+        <label for="updateEmpEmail">Email:</label>
+        <input type="email" id="updateEmpEmail" placeholder="New Email" />
+
+        <button id="updateEmployeeBtn">Update Employee</button>
+    </div>
+
+    <!-- DELETE EMPLOYEE -->
+    <div class="delete-employee">
+        <h3>Delete Employee</h3>
+        <label for="deleteEmpId">Employee ID:</label>
+        <input type="text" id="deleteEmpId" placeholder="ID to delete" />
+        <button id="deleteEmployeeBtn">Delete Employee</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
