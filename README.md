@@ -211,6 +211,3 @@ This project is licensed under the **MIT License**.
 For any queries, reach out:
 - **GitHub:** [imaadiiii](https://github.com/imaadiiii)
 - **Email:** [adityaraj006005@gmail.com](mailto:adityaraj006005@gmail.com)
-```
-
-
