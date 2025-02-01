@@ -215,15 +215,3 @@ For any queries, reach out:
 
 ---
 
-## **How to Add README & License to GitHub**
-```bash
-# Create README and License files
-echo "# Employee Management System" > README.md
-echo "MIT License..." > LICENSE
-
-# Add, commit, and push
-git add README.md LICENSE
-git commit -m "Added README and LICENSE"
-git push origin main
-```
-
